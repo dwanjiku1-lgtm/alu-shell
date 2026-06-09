@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# THis script displays numbers from 1 to 20 on number 4 it displays "bad luck from China" , on number 9 it displays "bad luck from Japan" and on numner 17 "bad luck from Italy"
+i=0
+while [ "$i" -lt 20 ]; do
+i=$((i+1))
+echo "$i"
+case "$i" in
+4) echo "bad luck from China" ;;
+9) echo "bad luck from Japan" ;;
+17) echo "bad luck from Italy" ;;
+esac
+done
